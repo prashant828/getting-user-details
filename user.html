@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="user.css">
+    <title>fetch user details</title>
+</head>
+<body>
+<div>
+    <div class="form">
+        <div>
+            <h3>Enter UserName</h3>
+            <div class="row">
+                <div class="col-sm-9" >
+                    <input type="text" id="username" placeholder="enter username">
+                </div>
+                <div class="col-sm-3">
+                    <button class="btn btn-primary" id="btn"> Get User </button>
+                </div>
+            </div>
+        </div>
+        <div class="user-details hide">
+            <div id="avatar">
+                <img src="" alt="" id="avatar-img">
+            </div>
+            <div id="name">
+                <h3></h3>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <span class="key">Company: </span>
+                    <span class="value" id="company"></span>
+                </div>
+                <div class="col-md-6">
+                    <span class="key">Blog: </span>
+                    <span class="value" id="blog"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <span class="key">Email: </span>
+                    <span class="value" id="email"></span>
+                </div>
+                <div class="col-md-6">
+                    <span class="key">Location: </span>
+                    <span class="value" id="location"></span>
+                </div>
+            </div>
+            <p id="bio"></p>
+        </div>
+        <h3 id="error" class="hide">
+            Could not find any user
+        </h3>
+    </div>
+
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="user.js"></script>
+</body>
+</html>
